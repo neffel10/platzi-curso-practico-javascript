@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento con Cupones</title>
+</head>
+<body>
+    <h1>
+        Descuentos con Cupones edicion Platzi 1
+    </h1>
+
+    <p>Taller de prueba de aplicación de cupones para aplicar descuentos Solución Platzi 1</p>
+
+    <form>
+        <label for="InputPrice">Escribe el precio de tu producto: </label> <!-- El for es para saber de donde tomar el input -->
+        <input id="InputPrice" type="number"/>
+
+        <label for="InputCoupon">Escribe el codigo de descuento:</label> 
+        <input id="InputCoupon" type="text"/>
+
+        <button type="button" onclick="onClickButtonPriceDiscount()"> <!-- Implementa funcion onclick para calcular el precio ya con el descuento, la cual se mando a llamar del script descuentos.js -->
+            Calcular el precio con descuento
+        </button>
+
+        <p id="ResultP"></p> <!-- Imprime el resultado en una etiqueta p, el proceso se hace en el Javascript con una funcion InnerHTML -->
+    </form>
+
+    <script src="./descuentocuponesplatzi.js"></script>
+</body>
+</html>
